@@ -12,7 +12,7 @@ resets & variables
 	--blue-3: #66a2e7;
 	--gold: #d6bb32;
 	--white: #ededed;
-	--clear-white: #ededed9e;
+	--clear-white: #edededc7;
 	--background: #d1cece;
 }
 
@@ -61,11 +61,23 @@ img {
 	margin: 0 auto;
 }
 
+.division {
+	width: 90%;
+	height: 0.1rem;
+	margin: 2rem auto;
+	background-color: black;
+}
+
 /* 
 =======
 header
 =======
 */
+
+header {
+	-webkit-box-shadow: 3px 3px 10px 1px #aeaeae;
+	box-shadow: 3px 3px 10px 1px #aeaeae;
+}
 
 header .top-bar {
 	display: flex;
@@ -200,6 +212,24 @@ main {
 	font-size: 2rem;
 	align-self: flex-end;
 	margin: 0 0 0 auto;
+}
+
+footer {
+	margin: 2rem 0;
+}
+
+footer ul {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	align-items: center;
+}
+footer li {
+	padding: 0 0.5rem 0.2rem 0.5rem;
+}
+
+footer li:not(:last-child) {
+	border-right: 0.1rem solid white;
 }
 
 @media only screen and (min-width: 768px) {
