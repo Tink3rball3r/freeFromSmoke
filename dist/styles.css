@@ -12,6 +12,8 @@ resets & variables
 	--blue-3: #66a2e7;
 	--gold: #d6bb32;
 	--white: #ededed;
+	--dark-gray: #858181;
+	--paragraph: #454343;
 	--clear-white: #edededc7;
 	--background: #d1cece;
 }
@@ -47,6 +49,14 @@ li {
 a {
 	text-decoration: none;
 }
+p {
+	color: var(--paragraph);
+}
+h1,
+h2,
+h3 {
+	color: var(--blue-2);
+}
 
 img {
 	width: 100%;
@@ -61,11 +71,16 @@ img {
 	margin: 0 auto;
 }
 
+.card a,
+footer a {
+	color: var(--blue-2);
+}
+
 .division {
 	width: 90%;
 	height: 0.1rem;
 	margin: 2rem auto;
-	background-color: black;
+	background-color: var(--dark-gray);
 }
 
 /* 
@@ -151,6 +166,10 @@ nav li:not(:last-child) {
 	background-position: center center;
 }
 
+.hero.why {
+	background-image: url('./images/why_hero-mobile.jpg');
+}
+
 .hero h2 {
 	position: absolute;
 	bottom: 200px;
@@ -185,7 +204,7 @@ main {
 .card {
 	position: relative;
 	width: 100%;
-	margin: 0 auto 0.55rem auto;
+	margin: 1rem 0;
 	-webkit-box-shadow: 3px 3px 10px 1px #aeaeae;
 	box-shadow: 3px 3px 10px 1px #aeaeae;
 }
@@ -214,6 +233,25 @@ main {
 	margin: 0 0 0 auto;
 }
 
+.card-secondary {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	margin: 1rem 0;
+	-webkit-box-shadow: 3px 3px 10px 1px #aeaeae;
+	box-shadow: 3px 3px 10px 1px #aeaeae;
+}
+.card-text-secondary {
+	padding: 0.5rem 1rem;
+	background-color: var(--white);
+}
+
+/* 
+=======
+footer
+=======
+*/
+
 footer {
 	margin: 2rem 0;
 }
@@ -229,12 +267,37 @@ footer li {
 }
 
 footer li:not(:last-child) {
-	border-right: 0.1rem solid white;
+	border-right: 0.1rem solid var(--dark-gray);
+}
+
+/* 
+=======
+what's your why
+=======
+*/
+
+.why-reason {
+	background-color: var(--white);
+	padding: 0.5rem 1rem;
+}
+
+.why-reason h2 {
+	font-size: 2.5rem;
+	text-align: center;
 }
 
 @media only screen and (min-width: 768px) {
-	.card {
-		width: 48%;
+	.card,
+	.card-secondary {
+		flex-basis: 48%;
+	}
+
+	.first {
+		display: none;
+	}
+
+	.hero.why {
+		background-image: url('./images/why_hero-desktop.jpg');
 	}
 }
 
