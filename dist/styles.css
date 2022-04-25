@@ -166,8 +166,22 @@ nav li:not(:last-child) {
 	background-position: center center;
 }
 
+.hero-text {
+	background-color: var(--white);
+	padding: 0.5rem 1rem;
+}
+
+.hero-text h2 {
+	font-size: 2.5rem;
+	text-align: center;
+}
+
 .hero.why {
 	background-image: url('./images/why_hero-mobile.jpg');
+}
+
+.hero.ready {
+	background-image: url('./images/ready_hero.jpg');
 }
 
 .hero h2 {
@@ -246,6 +260,26 @@ main {
 	background-color: var(--white);
 }
 
+.graphic-card {
+	width: 100%;
+	background-color: var(--white);
+	margin: 1rem 0;
+	padding: 2rem 0 3rem 0;
+	-webkit-box-shadow: 3px 3px 10px 1px #aeaeae;
+	box-shadow: 3px 3px 10px 1px #aeaeae;
+}
+
+.graphic-card img {
+	width: 40%;
+	margin: 0 auto;
+}
+
+.graphic-card p,
+.graphic-card h2 {
+	text-align: center;
+	padding: 0 1rem;
+}
+
 /* 
 =======
 footer
@@ -272,28 +306,19 @@ footer li:not(:last-child) {
 
 /* 
 =======
-what's your why
+getting ready
 =======
 */
 
-.why-reason {
-	background-color: var(--white);
-	padding: 0.5rem 1rem;
-}
-
-.why-reason h2 {
-	font-size: 2.5rem;
-	text-align: center;
-}
-
 @media only screen and (min-width: 768px) {
 	.card,
-	.card-secondary {
+	.card-secondary,
+	.graphic-card {
 		flex-basis: 48%;
 	}
 
-	.first {
-		display: none;
+	.graphic-card {
+		flex-basis: 30%;
 	}
 
 	.hero.why {
