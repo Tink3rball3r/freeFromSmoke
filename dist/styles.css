@@ -67,7 +67,7 @@ img {
 }
 
 .container {
-	max-width: 1200px;
+	max-width: 1050px;
 	margin: 0 auto;
 }
 
@@ -264,7 +264,7 @@ main {
 	width: 100%;
 	background-color: var(--white);
 	margin: 1rem 0;
-	padding: 2rem 0 3rem 0;
+	padding: 2rem 0 1rem 0;
 	-webkit-box-shadow: 3px 3px 10px 1px #aeaeae;
 	box-shadow: 3px 3px 10px 1px #aeaeae;
 }
