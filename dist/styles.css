@@ -184,6 +184,10 @@ nav li:not(:last-child) {
 	background-image: url('./images/ready_hero.jpg');
 }
 
+.hero.advice {
+	background-image: url('./images/advice_hero.jpg');
+}
+
 .hero h2 {
 	position: absolute;
 	bottom: 200px;
