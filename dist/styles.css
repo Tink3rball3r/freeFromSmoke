@@ -188,6 +188,10 @@ nav li:not(:last-child) {
 	background-image: url('./images/advice_hero.jpg');
 }
 
+.hero.support {
+	background-image: url('./images/support_hero_mobile.png');
+}
+
 .hero h2 {
 	position: absolute;
 	bottom: 200px;
@@ -255,6 +259,7 @@ main {
 	width: 100%;
 	display: flex;
 	flex-direction: column;
+	justify-content: flex-end;
 	margin: 1rem 0;
 	-webkit-box-shadow: 3px 3px 10px 1px #aeaeae;
 	box-shadow: 3px 3px 10px 1px #aeaeae;
@@ -325,8 +330,16 @@ getting ready
 		flex-basis: 30%;
 	}
 
+	.three-stack .card-secondary {
+		flex-basis: 30%;
+	}
+
 	.hero.why {
 		background-image: url('./images/why_hero-desktop.jpg');
+	}
+
+	.hero.support {
+		background-image: url('./images/support_hero1.png');
 	}
 }
 
